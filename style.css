@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url('bgimage.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100%; /* Ensure it covers the entire height of .main */
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    position: relative;
+    z-index: 10;
+    min-width: 70vw;
+}
+
+nav img {
+    width: 114px;
+    
+}
+
+.signinbutton {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    
+    cursor: pointer;
+    background-color: red;
+    border-radius: 8px;
+    border:5px sloid white;
+}
+
+.hero {
+    color: white;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100% - 62px); /* Adjust height based on .main height and nav height */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 49px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.inputting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 255px;
+    height: 56px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid gray;
+    background-color: rgb(68, 62, 62);
+    color: white;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: darkred;
+}
+
+.separation {
+    height: 11px;
+    background-color: grey;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: auto ;
+    margin-top: 10px;
+    color: white;
+    max-width:80vw;
+    min-width: 80vw;
+    
+}
+
+.signinbutton{
+    border:2px solid white;
+}
+
+.sec1-img{
+position: relative;
+}
+.sec3-img{
+    width: 50%;
+    visibility: hidden;
+}
+.sec1-img img{
+    width:400px;
+    z-index: 10;
+    position: relative;
+}
+.sec1-img video{
+    position: absolute;
+    top:51px;
+    right:0px;
+    width: 370px;
+   
+}
+.text-first h1{
+ font-size:48px;
+ font-weight: bolder;
+ text-align: center;
+}
+.text-first p{
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+.faq {
+    width: 100vw;
+    
+    /* Just for visibility */
+
+    /* Additional styles as needed */
+}
+
+.faq>h2{
+    color: white;
+    text-align: center;
+}
+.faq{
+    background-color: black;
+    color:white;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+
+    gap:10px;
+    
+}
+.faqbox{
+    width: 80%;
+    min-width:80vw;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 24px;
+    margin-top: 10px;
+    background-color:#414141;
+    margin: auto;
+    cursor: pointer;
+
+
+
+}
+.faqbox span{
+    color: white;
+    font-size: 20px;
+   
+}
+form>h3{
+    text-align: center;
+}
+.secondform{
+    margin-top: 20px;
+}
+.footer{
+    padding-top: 40px;
+    width:80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    color:white;
+    row-gap:20px;
+ 
+
+}
+.third{
+    height: 50vh;
+}
+.footerbox{
+width: 20%;
+}
+ul{
+    list-style: none;
+
+}
+ul li{
+    display: block;
+}
+
+li{
+    margin-top: 20px;
+}
+.footerbox3>ul>li{
+      margin-bottom: 30px;
+      
+}
+.footerbox{
+font-size: 14px;
+text-decoration: underline;
+color: gainsboro;
+}
+@media screen and (max-width: 960px) {
+    .first{
+        flex-direction: column;
+        height: max-content;
+        margin-top: 20px;
+    }
+    .first img{
+      width:100%
+    }
+    .first video{
+        width:90%;
+    }
+
+    
+    .hero h1 {
+    font-size: 32px;
+    
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+   
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-size: 20px;
+    
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.second,.fourth{
+    flex-direction: column-reverse;
+    height: max-content;
+}
+.first h1{
+    margin-top:10px ;
+}
+.first p{
+    margin-top:10px
+}
+.third{
+    height: 50vh;
+}
+
+}
+
+@media screen and (max-width:600px){
+    .hero{
+        width: 90vw;
+    }
+    .hero h1 {
+        font-size: 28px;
+        
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .hero h3 {
+        font-size: 20px;
+        
+        margin-bottom: 20px;
+    }
+    .hero input{
+        width: 100%;
+        background-color: transparent;
+        opacity: 1;
+        font-weight: 500;
+        height: 50px;
+    }
+    .hero button{
+        width: 60%;
+    }
+    .first{
+        width: 100%;
+       
+    }
+    .text-first{
+        width: 100%;
+    }
+    .first h1{
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    .first p{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    form button{
+        font-size: 16px;
+    }
+    
+    
+    
+}
+@media screen and(min-width:900px){
+
+    .first video{
+        width:60%;
+    }
+}
